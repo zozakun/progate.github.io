@@ -1,147 +1,85 @@
 /* CSSのリセット（消さないでください） */
 html, body,
 ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
+h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
 }
 
-header li {
+li {
   list-style: none;
-  display: inline-block;
-  padding: 20px;
-  color: white;
 }
 
-/* ここからCSSを記述してください */
-header {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  background: #26d0c9;
-  align-items: center;
+a {
+  text-decoration: none;
 }
 
-.header-logo {
-  float: left;
-  padding : 40px 40px;
+/* ここからCSSを書いていきましょう */
+.top-wrapper {
+  height: 630px;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
   color: white;
-  font-size : 40px;
+  text-align: center;
+  border-radius: 5px;
  
 }
 
-main  {
-  font-size: 50px;
-}
-
-div {
-  display: block;
-  
+.container {
+   opacity: .9;
 }
 
 .container h1 {
-  font-weight: bold;
-  font-size: 140px;
-  margin :90px 50px 0px  ;
+  padding: 183px 0 0 0;
+  font-size: 45px;
+  opacity: .7;
+  letter-spacing: 3.7px;
 }
 
- .container span {
-  color: red;
-}
 
-.container h2 {
-  font-size:60px;
-  margin :0px 60px 80px ;
-}
-
-section {
-  padding: 60px;
-}
-
- section h1 {
-  font-size: 30px;
-}
-
-.lesson h1{
-  border-bottom: 2px solid gray;
-}
-
-.contents-items {
-  height:440px;
-  margin-top: 40px;
-  margin-bottom: auto;
-}
-
-.items {
-  float : left;
-  font-size:25px;
-  margin: 20px;
-}
-
-.form{
-  margin-left:80px;
-  margin-right:70px;
-}
-
-.form-title{
-  border-bottom: 2px solid #0003;
-  font-size:35px;
-  margin-bottom: 40px;
-  padding-bottom:10px;
-}
-
-input, textarea {
-  border:1px solid #0002;
-  width:430px;
-  height: 20px;
-  padding: 20px;
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
-
-.list-title {
-  font-size: 15px;
-}
-
-textarea {
-  height: 50px;
-}
-
-.contact-submit {
+.btn-shinki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height:40px;
+  background-color: #239b76;
+  margin: 25px auto 15px ;
   text-align: center;
-  height: 75px;
-  margin-bottom: 130px;
-  font-size:20px;
-  background-color: #dee7ec;
-  color: #889eab;
+  border-radius: 5px;
+
 }
 
-footer {
-  height: 200px;
-  background-color:#2f5167;
-  color:white;
+.btn-wrapper p {
+  padding-bottom: 15px;
 }
 
-.footer-logo {
-  float:left;
-  font-size:30px;
-  padding: 40px 40px;
+.btn-facebook {
+  display: inline-block;
+  align-items: center;
+  width: 170px;
+  height: 28px;
+  background-color: #3b5998;
+  text-align: center;
+  justify-content: center;
+  padding:5px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-.footer-list {
-  float: right;
-  margin: 30px;
-  
+.btn-twitter {
+  display: inline-block;
+  align-items: center;
+  width: 150px;
+  height: 28px;
+  background-color: #55acee;
+  text-align: center;
+  justify-content: center;
+  padding:5px;
+  border-radius: 5px;
 }
-
-footer li{
-  list-style: none;
-  padding:10px;
-}
-
 
